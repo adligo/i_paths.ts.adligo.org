@@ -1,0 +1,22 @@
+{
+    "author": "Scott Morgan",
+    "bugs": {
+      "url": "https://github.com/adligo/i_paths.ts.adligo.org/issues"
+    },
+    "description": "This project contains interfaces for the paths.ts.adligo.org (filesystem paths APIs for windows and unix).",
+    "dependencySrcSLinks": [{
+      "project": "i_strings.ts.adligo.org" 
+    }],
+    "homepage": "https://github.com/adligo/i_paths.ts.adligo.org#readme",
+    "keywords": [
+      "paths"
+    ],
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/adligo/i_paths.ts.adligo.org.git"
+    },
+    "type": "module",
+    "version": "0.0.1"
+  }
+  
