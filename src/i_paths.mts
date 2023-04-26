@@ -25,3 +25,28 @@ export interface I_Path {
   isRelative(): boolean;
   isWindows(): boolean;
 }
+
+export interface I_Paths {
+    /**
+     * An absolute path 
+     * @param path 
+     */
+  toAbsolute(path: I_Path): I_Path;
+  /**
+   * 
+   * @param path turn a path into a Unix path
+   */
+  toUnix(path: I_Path): I_Path;
+  /**
+   * turn a path into a 
+   * @param path 
+   */
+  toWindows(path: I_Path): I_Path;
+  /**
+   * Convert any path into the current OS path,
+   * i.e. C:/foo/bar is a path deliverd by node.js running in GitBash
+   * on Windows sometimes (it should be C:\foo\bar or /c/foo/bar)
+   * @param path 
+   */
+  normalize(path: string): I_Path;
+}
