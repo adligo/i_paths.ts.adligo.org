@@ -5,6 +5,8 @@
     },
     "description": "This project contains interfaces for the paths.ts.adligo.org (filesystem paths APIs for windows and unix).",
     "dependencySrcSLinks": [{
+      "project": "i_obj.ts.adligo.org" 
+    },{
       "project": "i_strings.ts.adligo.org" 
     }],
     "homepage": "https://github.com/adligo/i_paths.ts.adligo.org#readme",

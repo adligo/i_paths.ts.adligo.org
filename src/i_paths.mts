@@ -14,16 +14,18 @@
   * limitations under the License.
   */
 
+import { I_Equatable } from '../../i_obj.ts.adligo.org/src/i_obj.mjs';
 import {I_String} from './i_strings.ts.adligo.org@slink/i_strings.mjs';
 
 /**
  * A interface for a more complex description of filesystem paths
  * than a string.
  */
-export interface I_Path {
+export interface I_Path extends I_Equatable, I_String {
   getParts(): string[];
   isRelative(): boolean;
   isWindows(): boolean;
+  toPathString(): string;
   /**
    * 
    * @param path turn a path into a Unix path
